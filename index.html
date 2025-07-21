@@ -787,7 +787,7 @@
                         </div>
                         <div class="permission-option">
                             <input type="checkbox" id="prohibitThirdPartyReproduction">
-                            <label for="prohibitThirdPartyReproduction">AI生成物にデータセット内著作物の複製物が含まれていた場合、第三者への提供を禁止する(AI事業者の責任とする)</label>
+                            <label for="prohibitThirdPartyReproduction">AI生成物にデータセット内著作物の複製物が含まれていた場合、第三者への提供を禁止する(提供者の責任とする)</label>
                         </div>
                     </div>
 
@@ -1451,9 +1451,9 @@ a. 改変されたマテリアルとは、許諾されたマテリアルから�
                 }
                 if (prohibitThirdPartyReproductionCheckbox.checked) {
                     if (selectedAITrainingOption === 'ai_minor_use') {
-                        prohibitionsText.push("    * 当該データセットを利用したAI生成物に当該データセット内著作物のすべてまたは一部の複製物が含まれていた場合、第三者への提供を禁止します（AI事業者の責任とします）ただし軽微利用を除きます。");
+                        prohibitionsText.push("    * 当該データセットを利用したAI生成物に当該データセット内著作物のすべてまたは一部の複製物が含まれていた場合、第三者への提供を禁止します（提供者の責任とします）ただし軽微利用を除きます。");
                     } else {
-                        prohibitionsText.push("    * 当該データセットを利用したAI生成物に当該データセット内著作物のすべてまたは一部の複製物が含まれていた場合、第三者への提供を禁止します（AI事業者の責任とします）。");
+                        prohibitionsText.push("    * 当該データセットを利用したAI生成物に当該データセット内著作物のすべてまたは一部の複製物が含まれていた場合、第三者への提供を禁止します（提供者の責任とします）。");
                     }
                 }
 
